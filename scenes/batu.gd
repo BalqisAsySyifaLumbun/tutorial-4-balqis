@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var scene_name= "LoseScreen"
+@export var scene_name= "LoseScreen2"
 
 func _on_body_entered(body: Node) -> void:
 	if body.name == "Player":

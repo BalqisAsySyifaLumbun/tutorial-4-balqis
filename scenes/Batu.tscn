@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b23y07o1k5kb8"]
+
+[ext_resource type="Script" path="res://scenes/batu.gd" id="1_cgpbn"]
+[ext_resource type="Texture2D" uid="uid://pqqy2vvm231d" path="res://assets/kenney_platformerpack/PNG/Tiles/rock.png" id="1_riwps"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ovvy3"]
+radius = 67.0
+height = 134.0
+
+[node name="Batu" type="RigidBody2D"]
+mass = 0.5
+gravity_scale = 0.2
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_cgpbn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(40, 11)
+rotation = 1.5708
+texture = ExtResource("1_riwps")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 10)
+shape = SubResource("CapsuleShape2D_ovvy3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
