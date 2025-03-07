@@ -7,3 +7,5 @@ Lalu saya sebar Tilenya
 
 > Memiliki rintangan berupa jurang dan objek yang berjatuhan secara periodik.
 - Saya sebar tilenya, panjang untuk pulau besar, pendek untuk pijakan. Spawner diletakkan di atas level.
+
+- Credit untuk Daril yang membantu logika Spawner.
